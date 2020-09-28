@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    direction: ltr;
+    text-decoration: none;
+    font-family: Tahoma;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+#root{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(231, 163, 231);
+}
+#main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+    height: 86%;
+    border: 1px solid grey;
+    background-color: rgb(228, 227, 227);
+    box-shadow: 0 0 9px black;
+    border-radius: 7px;
+}
+#screen{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 95%;
+    height: 16%;
+    background-color: whitesmoke;
+    border-radius: 7px;
+    box-shadow: 0 0 5px darkgrey;
+    padding:2%;
+    font-size: 30px;
+}
+#numbers{
+    font-weight: bold;
+    width: 95%;
+    height: 78%;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 2.2%;
+    height: 14%;
+}
+.btn{
+    height: 100%;
+    width: 23%;
+    background-color: rgb(240, 126, 155);
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 0 4px black;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.btn:hover{
+    background-color: linen;
+    transition: 0.15s;
+}
+/*----------------------------------------------------------------------------------------------*/
+@media screen and (min-width:796px){
+    .row:first-child{
+        margin-top: 1%;
+    }
+    .row{
+        height: 13%;
+    }
+}
+@media screen and (min-width:1230px){
+    .row{
+        height: 12%;
+    }
+}
